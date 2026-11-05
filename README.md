@@ -146,7 +146,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:145** - check tokenizer class
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:153** - don't know what's the usage
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:228** - (sgm): add for verl but we may not tokenizer in Rollout
-- [ ] **luffy/verl/verl/third_party/vllm/vllm/vllm_v_0_4_2/llm_engine_sp.py:237** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
+- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:237** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:67** - check megatron
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:254** - need to implement a general way to deal with prefix
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:272** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
@@ -159,7 +159,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/spmd_gpu_executor.py:62** - (sgm): verl not support speculative decode now
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/spmd_gpu_executor.py:208** - (sgm): not implemented async executor yet
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/tokenizer.py:61** - (sgm): the lora tokenizer is also passed, but may be different
-- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/worker.py:30** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
+- [ ] **luffy/verl/verl/third_party/vllm/vllm/vllm_v_0_4_2/worker.py:30** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/worker.py:270** - (sgm): check whether need this
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py:53** - (sgm): check this
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py:54** - (sgm): check this
@@ -269,7 +269,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vllm when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:76** - after binding to the memory buffer, we can load the checkpoint here
-- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -\\u003e vLLM
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
 
 ## 🤝 Contributing
