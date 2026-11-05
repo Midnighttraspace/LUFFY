@@ -146,7 +146,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:145** - check tokenizer class
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:153** - don't know what's the usage
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:228** - (sgm): add for verl but we may not tokenizer in Rollout
-- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py:237** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
+- [ ] **luffy/verl/verl/third_party/vllm/vllm/vllm_v_0_4_2/llm_engine_sp.py:237** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:67** - check megatron
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:254** - need to implement a general way to deal with prefix
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py:272** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
@@ -221,7 +221,6 @@ LUFFY/
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:65** - Handle edge cases and error conditions
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:70** - Implement batch-wise reward computation
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:71** - Add proper error handling and validation
-- [ ] **luffy/verl/verl/trainer/main_ppo.py:880** - make a canonical logger that supports various backend
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:129** - add other ways to estimate advantages
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:207** - add response length
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:330** - support each role have individual ray_worker_group_cls,
