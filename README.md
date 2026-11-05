@@ -159,7 +159,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/spmd_gpu_executor.py:62** - (sgm): verl not support speculative decode now
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/spmd_gpu_executor.py:208** - (sgm): not implemented async executor yet
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/tokenizer.py:61** - (sgm): the lora tokenizer is also passed, but may be different
-- [ ] **luffy/verl/verl/third_party/vllm/vllm/vllm_v_0_4_2/worker.py:30** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
+- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/worker.py:30** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/worker.py:270** - (sgm): check whether need this
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py:53** - (sgm): check this
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py:54** - (sgm): check this
@@ -221,6 +221,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:65** - Handle edge cases and error conditions
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:70** - Implement batch-wise reward computation
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:71** - Add proper error handling and validation
+- [ ] **luffy/verl/verl/trainer/main_ppo.py:880** - make a canonical logger that supports various backend
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:129** - add other ways to estimate advantages
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:207** - add response length
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:330** - support each role have individual ray_worker_group_cls,
@@ -269,7 +270,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vllm when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:76** - after binding to the memory buffer, we can load the checkpoint here
-- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -\\u003e vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
 
 ## 🤝 Contributing
